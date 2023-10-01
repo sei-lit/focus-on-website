@@ -76,6 +76,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     width: 100%;
     position: absolute;
@@ -100,6 +101,110 @@ header h3 {
 .logo img {
     width: 50px;
     height: 50px;
+}
+
+.ham_menu-wrap {
+    position: fixed;
+    top: 22.5px;
+    right: 25px;
+    z-index: 999;
+    display: none;
+    width: 55px;
+    height: 45px;
+}
+
+.ham_menu-wrap .ham_menu {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+  
+.ham_menu-wrap .ham_menu span {
+    position: absolute;
+    display: block;
+    left: 50%;
+    height: 2px;
+    background-color: #4D455D;
+    transition: all 0.4s;
+}
+  
+.ham_menu-wrap .ham_menu span:first-child {
+    top: 38%;
+    transform: translateX(-50%);
+    width: 28px;
+}
+  
+.ham_menu-wrap .ham_menu span:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+}
+  
+.ham_menu-wrap .ham_menu span:last-child {
+    top: 63%;
+    transform: translateX(-50%);
+    width: 28px;
+}
+  
+.ham_menu-wrap .ham_menu.active span:nth-of-type(1) {
+    top: 50%;
+    transform: translateX(-50%) rotate(25deg);
+}
+  
+.ham_menu-wrap .ham_menu.active span:nth-of-type(2) {
+    opacity: 0;
+}
+  
+.ham_menu-wrap .ham_menu.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translateX(-50%) rotate(-25deg);
+}
+  
+.ham_menu-wrap .window-fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    width: 30%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 1;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+  
+.ham_menu-wrap .window-fixed .window {
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ham_menu-wrap .window-fixed .window ul {
+    margin-top: 80px;
+    color: #4D455D;
+    list-style: circle;
+}
+
+.ham_menu-wrap .window-fixed .window ul a {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.ham_menu-wrap .window-fixed .links-wrap {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 125px 0 160px;
 }
 
 nav ul {
@@ -198,3 +303,31 @@ footer img {
     font-weight: 700;
 }
 
+
+@media screen and (max-width: 1024px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .ham_menu-wrap {
+        display: block;
+    }
+
+    .window nav ul {
+        display: block;
+    }
+
+    footer {
+        margin-top: 30vw;
+    }
+
+    .footer-box {
+        bottom: 10%;
+        left: 65%;
+    }
+
+    @media screen and (max-width: 600px) {
+
+    }
+}
