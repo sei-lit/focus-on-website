@@ -1,0 +1,175 @@
+#first-view {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+#first-view h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: #948F9E;
+    margin-left: 96px;
+    letter-spacing: 0.5em;
+}
+
+.emphasize {
+    color: #4D455D;
+}
+
+#policy {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#policy h2 {
+    text-align: right;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+}
+
+#policy p {
+    line-height: 64px;
+    margin-top: 328px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #948F9E;
+}
+
+.left {
+    margin-top: 160px;
+}
+
+.right {
+    text-align: right;
+}
+
+#action {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 328px;
+}
+
+#action h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.action-boxes {
+    margin-top: 328px;
+}
+
+.action-box {
+    position: relative;
+    margin-top: 40px;
+}
+
+.action-box:first-child {
+    margin-top: 0;
+}
+
+.action-box:nth-child(2) {
+    margin-left: 25%;
+}
+
+.action-box:nth-child(3) {
+    margin-left: 50%;
+}
+
+.action-box p {
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    line-height: 64px;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-40%);
+}
+
+#member {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 328px;
+}
+
+.slider {
+    margin-top: 40px;
+    display: flex;
+    gap: 120px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.member h3 {
+    margin-top: 16px;
+}
+
+.member p {
+    margin-top: 16px;
+}
+
+#info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 228px;
+    text-align: center;
+}
+
+#info div {
+    margin-top: 124px;
+    display: flex;
+}
+
+.map {
+    width: 50%;
+}
+
+.map::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.info-text {
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-text ul {
+    list-style: none;
+    line-height: 48px;
+}
+
+.properties {
+    text-align: right;
+}
+
+.contents {
+    text-align: left;
+    font-weight: 700;
+    list-style: none;
+}
+
+footer {
+    margin-top: 240px;
+}

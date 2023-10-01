@@ -1,0 +1,206 @@
+#first-view {
+    height: 100vh;
+    background: url(../images/top_first_view.png) center/cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: right;
+
+}
+
+#about {
+    width: 80%;
+    background-color: #F5E9CF;
+    padding: 60px;
+    border-radius: 60px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.message {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.message h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.message p {
+    margin: 64px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.message img {
+    width: 150px;
+}
+
+.message span {
+    font-size: 16px;
+}
+
+.button .button-text {
+    font-size: 16px;
+    margin: 0;
+}
+
+.message .caption {
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+#service {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 136px;
+}
+
+.service-img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.service-box {
+    display: flex;
+    gap: 48px;
+    margin-top: 200px;
+    flex-direction: row-reverse;
+}
+
+.service-text {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.service-text h3 {
+    font-size: 24px;
+}
+
+.service-text p {
+    font-size: 20px;
+}
+
+.app {
+    margin-top: 80px;
+    flex-direction: row;
+}
+
+#cloud-funding {
+    width: 90%;
+    margin: 120px auto 0;
+    position: relative;
+    text-align: center;
+}
+
+.headline {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: left;
+}
+
+.headline h2,
+.headline h5 {
+    color: white;
+}
+
+.main {
+    width: 100%;
+}
+
+#cloud-funding .button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+#news {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.news-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.news-box {
+    position: relative;
+}
+
+.news-box img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.news-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.news-box p {
+    font-size: 12px;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 24px;
+}
+
+.news-box .rectangle {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#news .button-box {
+    margin-top: 40px;
+    text-align: right;
+}
+
+#contact {
+    width: 80%;
+    margin: 120px auto 0;
+}
+
+.mail {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/mail.png) center/contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mail .button {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mail .button img {
+    width: 200px;
+}
+

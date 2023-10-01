@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mgenplus";
+}
+
+h1, h2, h3, h4, h5, p {
+    color: #4D455D;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #4D455D;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-black.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-heavy.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "mgenplus";
+    src: url(../fonts/rounded-mgenplus-1c-thin.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header h3 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.logo {
+    margin: auto 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #4D455D;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 16px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.button img {
+    width: 150px;
+}
+
+.button-text {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    margin: 0;
+    margin-top: 120px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer img {
+    width: 100%;
+}
+
+.footer-box {
+    position: absolute;
+    bottom: -10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4D455D;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+.list li a {
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.sns {
+    margin-top: 64px;
+    display: flex;
+    gap: 40px;
+}
+
+.sns img {
+    width: 50px;
+}
+
+.address {
+    margin-top: 64px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
