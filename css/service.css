@@ -1,0 +1,173 @@
+#first-view {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#first-view h1 {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 0.5em;
+}
+
+.first-view-img {
+    position: relative;
+}
+
+.first-view-img img {
+    width: 600px;
+}
+
+.presentation {
+    width: 400px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#merit {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.boxes {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+
+.box {
+    position: relative;
+    width: 40%;
+}
+
+.box:first-child {
+    width: 80%;
+}
+
+.box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box:first-child img {
+    width: 50%;
+}
+
+#example {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.example-box {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.example-box img {
+    width: 100%;
+    border-radius: 24px;
+}
+
+.background img {
+    width: 100%;
+    z-index: -1;
+}
+
+.speech {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    text-align: center;
+}
+
+.speech h4,
+.speech p {
+    color: white;
+}
+
+.speech h4 {
+    margin-top: 24px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.speech p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.speech-explanation {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
+
+.workshop {
+    width: 40%;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.workshop h4,
+.workshop p {
+    color: white;
+}
+
+.workshop h4 {
+    margin-top: 24px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.workshop p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.workshop-explanation {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.caption {
+    margin-top: 72px;
+    text-align: right;
+}
+
+#contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#contact a {
+    margin-top: 60px;
+}
