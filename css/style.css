@@ -258,7 +258,7 @@ footer img {
 .footer-box {
     position: absolute;
     bottom: -10%;
-    left: 75%;
+    left: 77%;
     transform: translate(-50%, -50%);
 }
 
@@ -320,12 +320,30 @@ footer img {
     }
 
     footer {
-        margin-top: 30vw;
+        margin-top: 0;
     }
 
-    .footer-box {
-        bottom: 10%;
-        left: 65%;
+    .list li::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .sns {
+        margin-top: 32px;
+        gap: 40px;
+    }
+    
+    .sns img {
+        width: 50px;
+    }
+
+    .list li a {
+        font-size: 12px;
+    }
+
+    .address {
+        margin-top: 32px;
+        font-size: 12px;
     }
 
     @media screen and (max-width: 600px) {

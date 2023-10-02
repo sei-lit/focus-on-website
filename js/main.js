@@ -11,12 +11,12 @@ $(document).on('click', '.ham_menu', function() {
     }
 });
 
-$(window).resize(function(){
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-        $('.footer-img').attr('src', '/images/footer_sp.png');
-    }else{
-        // windowのサイズが1024px以上
-        $('.footer-img').attr('src', '/images/footer.png');
-    }
-});
+// $(window).resize(function(){
+//     if (window.matchMedia("(max-width: 1024px)").matches) {
+//         $('.footer-img').attr('src', '/images/footer_sp.png');
+//     }else{
+//         // windowのサイズが1024px以上
+//         $('.footer-img').attr('src', '/images/footer.png');
+//     }
+// });
     

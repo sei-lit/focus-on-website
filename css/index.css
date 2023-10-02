@@ -136,7 +136,9 @@ h1 {
 
 .news-boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
     margin-top: 64px;
 }
 
@@ -204,6 +206,57 @@ h1 {
     width: 200px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
+    #about {
+        border-radius: 30px;
+    }
+    
+    .message h3 {
+        font-size: 24px;
+    }
+    
+    .message p {
+        font-size: 20px;
+    }
 
+    .message span {
+        font-size: 12px;
+    }
+    
+    .message .caption {
+        font-size: 12px;
+    }
+
+    .service-text h3 {
+        font-size: 20px;
+    }
+    
+    .service-text p {
+        font-size: 16px;
+    }
+
+    .service-box {
+        gap: 24px;
+    }
+
+    .service-text {
+        gap: 12px;
+    }
+
+    .service-text .button img {
+        width: 100px;
+    }
+
+    .service-text .button .button-text {
+        font-size: 12px;
+    }
+
+    #cloud-funding .button {
+        bottom: 3%;
+        left: 40%;
+    }
+
+    .mail .button img {
+        width: 150px;
+    }
 }

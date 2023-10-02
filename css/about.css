@@ -195,6 +195,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
 }
 
 .info-text ul {
@@ -214,4 +215,55 @@
 
 footer {
     padding-top: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+    #first-view h1{
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    #policy h2 {
+        font-size: 40px;
+    }
+
+    #policy p {
+        line-height: 48px;
+        margin-top: 264px;
+        font-size: 24px;
+    }    
+
+    .left {
+        margin-top: 104px;
+    }
+
+    #action h2 {
+        font-size: 24px;
+    }
+
+    .action-boxes {
+        margin-top: 164px;
+    }
+
+    .action-box p {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    #info {
+        padding-top: 114px;
+    }
+    
+    .info div {
+        margin-top: 60px;
+    }
+    
+    .info-text {
+        margin-left: 12px;
+        font-size: 16px;
+    }
+    
+    footer {
+        padding-top: 0;
+    }
 }
