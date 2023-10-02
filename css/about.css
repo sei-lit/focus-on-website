@@ -1,5 +1,5 @@
 #first-view {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -7,9 +7,34 @@
 #first-view h1{
     font-size: 64px;
     font-weight: 900;
-    color: #948F9E;
+    color: #716A7D;
     margin-left: 96px;
     letter-spacing: 0.5em;
+    line-height: 128px;
+}
+
+.background_video{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+.video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .emphasize {
@@ -19,6 +44,7 @@
 #policy {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 164px;
 }
 
 #policy h2 {
@@ -33,7 +59,7 @@
     margin-top: 328px;
     font-size: 32px;
     font-weight: 700;
-    color: #948F9E;
+    color: #716A7D;
 }
 
 .left {
@@ -45,9 +71,14 @@
 }
 
 #action {
+    width: 100%;
+    padding-top: 164px;
+    background-color: white;
+}
+
+.action {
     width: 80%;
     margin: 0 auto;
-    margin-top: 328px;
 }
 
 #action h2 {
@@ -93,13 +124,19 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 328px;
+    padding-top: 328px;
+    background-color: white;
 }
 
 .slider {
     margin-top: 40px;
     display: flex;
     gap: 120px;
+}
+
+.slick-dots {
+    background-color: #fff;
+    margin-bottom: 0;
 }
 
 .member {
@@ -121,13 +158,18 @@
 }
 
 #info {
+    width: 100%;
+    padding-top: 228px;
+    background-color: white;
+}
+
+.info {
     width: 80%;
     margin: 0 auto;
-    margin-top: 228px;
     text-align: center;
 }
 
-#info div {
+.info div {
     margin-top: 124px;
     display: flex;
 }
@@ -171,5 +213,5 @@
 }
 
 footer {
-    margin-top: 240px;
+    padding-top: 240px;
 }
