@@ -124,7 +124,7 @@ h1 {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
 #news {
@@ -252,7 +252,6 @@ h1 {
 
     #cloud-funding .button {
         bottom: 3%;
-        left: 40%;
     }
 
     .mail .button img {
@@ -264,6 +263,121 @@ h1 {
             width: 65%;
             font-size: 40px;
             margin-right: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 8px;
+        }
+
+        #about {
+            padding: 30px;
+            border-radius: 24px;
+        }
+
+        .message {
+            margin-top: 32px;
+        }
+        
+        .message h3 {
+            font-size: 16px;
+        }
+        
+        .message p {
+            margin: 64px 0;
+            font-size: 12px;
+        }
+
+        .message img {
+            width: 100px;
+        }
+
+        .button .button-text {
+            font-size: 10px;
+            margin: 0;
+        }
+
+        .message .caption {
+            font-size: 10px;
+        }
+
+        #service {
+            margin-top: 60px;
+        }
+
+        .service-box {
+            gap: 24px;
+            margin-top: 60px;
+            flex-direction: column;
+        }
+
+        .app {
+            margin-top: 30px;
+        }
+        
+        .service-box img {
+            width: 100%;
+        }
+
+        .service-text {
+            width: 100%;
+            gap: 20px;
+        }
+
+        .service-text h3 {
+            font-size: 20px;
+        }
+        
+        .service-text p {
+            font-size: 14px;
+        }
+
+        #cloud-funding .button {
+            bottom: 0;
+        }
+
+        #cloud-funding {
+            margin: 60px auto 0;
+        }
+        
+        #news {
+            margin-top: 60px;
+        }
+        
+        .news-boxes {
+            margin-top: 30px;
+            gap: 60px;
+        }
+
+        .news-box h4 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .news-box p {
+            margin-top: 12px;
+        }
+
+        #contact {
+            margin: 60px auto 30px;
+        }
+
+        .mail {
+            height: 50vh;
+        }
+        
+        .mail .button {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .mail .button img {
+            width: 100px;
         }
     }
 

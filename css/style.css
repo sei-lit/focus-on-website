@@ -384,5 +384,9 @@ footer img {
             font-size: 10px;
             font-weight: 500;
         }
+
+        .button img {
+            width: 100px;
+        }
     }
 }
