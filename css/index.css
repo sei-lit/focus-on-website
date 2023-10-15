@@ -9,7 +9,6 @@
 h1 {
     font-size: 64px;
     text-align: right;
-
 }
 
 #about {
@@ -259,4 +258,13 @@ h1 {
     .mail .button img {
         width: 150px;
     }
+
+    @media screen and (max-width: 600px) {
+        h1 {
+            width: 65%;
+            font-size: 40px;
+            margin-right: 20px;
+        }
+    }
+
 }
