@@ -368,6 +368,15 @@ footer img {
             right: 3%;
         }
 
+        .ham_menu-wrap .window-fixed {
+            width: 50%;
+        }
+
+        .ham_menu-wrap .window-fixed .window ul a {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
         .sns {
             margin-top: 10px;
             display: flex;
@@ -387,6 +396,10 @@ footer img {
 
         .button img {
             width: 100px;
+        }
+
+        .button-text {
+            font-size: 12px;
         }
     }
 }

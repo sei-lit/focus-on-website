@@ -1,4 +1,5 @@
 #first-view {
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -139,6 +140,10 @@
     margin-bottom: 0;
 }
 
+.slider .slick-initialized {
+    margin-bottom: 20px;
+}
+
 .member {
     text-align: center;
 }
@@ -265,5 +270,107 @@ footer {
     
     footer {
         padding-top: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        h2 {
+            font-size: 32px;
+        }
+
+        .background_video {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .video {
+            width: auto;
+            height: 100vh;
+        }
+
+        #first-view h1{
+            font-size: 24px;
+            line-height: 48px;
+            margin-left: 24px;
+        }
+
+        #policy h2 {
+            font-size: 24px;
+        }
+    
+        #policy p {
+            line-height: 32px;
+            font-size: 16px;
+        }    
+    
+        .left {
+            margin-top: 104px;
+        }
+    
+        #action h2 {
+            font-size: 16px;
+        }
+    
+        .action-boxes {
+            margin-top: 164px;
+        }
+
+        .action-box img {
+            width: 200px;
+        }
+
+        .action-box:nth-child(2) {
+            margin-left: 0;
+        }
+        
+        .action-box:nth-child(3) {
+            margin-left: 0;
+        }
+    
+        .action-box p {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        #member {
+            padding-top: 80px;
+        }
+        
+        .member p {
+            margin: 0;
+            font-size: 12px;
+            padding: 20px;
+        }
+        
+        #info {
+            padding-top: 80px;
+        }
+
+        .info div {
+            margin-top: 60px;
+            display: block;
+        }
+
+        .map {
+            width: 100%;
+        }
+
+        .map::before {
+            padding-top: 0;
+        }
+        
+        .info-text {
+            margin-left: 12px;
+            font-size: 12px;
+        }
+
+        .properties {
+            text-align: right;
+            display: inline-block;
+        }
+        
+        .contents {
+            display: inline-block;
+            text-align: left;
+        }
     }
 }

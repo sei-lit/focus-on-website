@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 #first-view h1 {
@@ -84,6 +85,14 @@
     border-radius: 24px;
 }
 
+.example-box p {
+    text-align: left;
+}
+
+.background .sp-img {
+    display: none;
+}
+
 .background img {
     width: 100%;
     z-index: -1;
@@ -100,6 +109,7 @@
 .speech h4,
 .speech p {
     color: white;
+    text-align: center;
 }
 
 .speech h4 {
@@ -134,6 +144,8 @@
 .workshop h4,
 .workshop p {
     color: white;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .workshop h4 {
@@ -173,5 +185,146 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #first-view {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
 
+    .first-view-img {
+        text-align: center;
+    }
+    
+    .first-view-img img {
+        width: 80%;
+    }
+
+    .example-box h4 {
+        font-size: 24px;
+    }
+
+    .example-box p {
+        font-size: 12px;
+    }
+
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 600px) {
+        h2 {
+            font-size: 28px;
+        }
+
+        #first-view h1 {
+            font-size: 40px;
+        }
+
+        .presentation {
+            border-radius: 10px;
+        }
+        
+        .boxes {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .box {
+            position: relative;
+            width: 100%;
+        }
+        
+        .box:first-child {
+            width: 100%;
+        }
+        
+        .box p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: 500;
+        }
+        
+        .box img {
+            width: 100%;
+        }
+        
+        .box:first-child img {
+            width: 100%;
+        }
+
+        .background .sp-img {
+            display: block;
+            width: 100%;
+            margin-top: 40px;
+        }
+        
+        .background img {
+            display: none;
+        }
+
+        .example-box img {
+            border-radius: 12px;
+        }
+
+        .speech {
+            width: 90%;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .speech h4 {
+            margin-top: 12px;
+            font-size: 20px;
+        }
+        
+        .speech p {
+            font-size: 12px;
+        }
+        
+        .speech-explanation {
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .workshop {
+            width: 90%;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .workshop h4 {
+            margin-top: 12px;
+            font-size: 20px;
+        }
+        
+        .workshop p {
+            font-size: 12px;
+        }
+        
+        .workshop-explanation {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .caption {
+            font-size: 10px;
+        }
+
+        #contact h2 {
+            font-size: 16px;
+        }
+        
+        #contact a {
+            margin-top: 60px;
+        }
+    }
 }
